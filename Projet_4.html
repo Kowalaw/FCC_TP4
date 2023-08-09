@@ -4,6 +4,7 @@
     <title>Le Bon Marlou</title>
     <meat charset="utf-8">
     <link rel="stylesheet" href="styles.css">
+    <script src="popup.js" defer></script>
   </head>
   <body>
     <header id="header">
@@ -20,47 +21,44 @@
       <h1>Le Bon Marlou</h1>
       <hr> 
       <h2 id="enga">Nos Engagements</h2>
-      <hr>
       <ul id="enga-txt">
+        <hr>
         <li>Nous travaillons avec des éleveurs bio, tout nos annimaux sont élevé en plaine air, avec des méthode respectueuse de l'environement et du bien être animal.</li>
         <li>Pour la création de nos produit, nous privilègieons le circuit court, tout nous boucher travail directement avec les éleveur de leurs régions.</li>
         <li>100% de nos produit sont Français, c'est plus qu'une quête  de qualité, c'est un véritable engagement au prêt des artisant qui font vivre de nos terroire et qui nourissent nos foyer.</li>
+        <hr>
       </ul>
-      <hr>
       <h2 id="prod">Nos Produits</h2>
-        <center>
-          <iframe id="video" src="https://www.youtube.com/embed/KFUHnpFeBQM"></iframe>
-        </center>
-        <center>
-          <iframe id="video" src="https://www.youtube.com/embed/xgaEDSjtdmg"></iframe>
-        </center>
-        <center>
-          <iframe id="video" src="https://www.youtube.com/embed/ZtaW5YaUp8o"></iframe>
-        </center>
+      <hr>
+      <div id="video">
+        <iframe id="video" src="https://www.youtube.com/embed/KFUHnpFeBQM"></iframe>
+        <iframe id="video" src="https://www.youtube.com/embed/xgaEDSjtdmg"></iframe>
+        <iframe id="video" src="https://www.youtube.com/embed/ZtaW5YaUp8o"></iframe>
+      </div>
       <hr>
       <h2 id="offr">Nos Offres</h2>
       <div id="divof">
         <ul>
           <div class="abo">
             <li><h3>Offre découverte</h3></li>
-            <li><h4>15€</h4></li>
-            <li>Recevez un assortiment de saucisson directement chez vous afin de découvrir notre merveilleuse gammes de saucissons "Le Bon Marlou"</li>
+            <li><h4><span class="prix">15€</span></h4></li>
+            <li class="descriptionOffre">Recevez un assortiment de saucisson directement chez vous afin de découvrir notre merveilleuse gammes de saucissons "Le Bon Marlou"</li>
           </div>
           <button class="com">Je commande !</button>
         </ul>
         <ul>
           <div class="abo">
             <li><h3>Abonnement Marlou</h3></li>
-            <li><h4>12€/mois</h4></li>
-            <li>Vous aimez le saucisson ? grace a cette offre, vous recevrez chaque mois un assortiment différent de saucisson "Le Bon Marlou", a déguster seul ou entre amis !</li>
+            <li><h4><span class="prix">12€/mois</span></h4></li>
+            <li class="descriptionOffre">Vous aimez le saucisson ? grace a cette offre, vous recevrez chaque mois un assortiment différent de saucisson "Le Bon Marlou", a déguster seul ou entre amis !</li>
           </div>
           <button class="com">Je commande !</button>
         </ul>
         <ul>
           <div class="abo">
             <li><h3>Marlou Premium</h3></li>
-            <li><h4>30€/mois</h4></li>
-            <li>Vous êtes un vrai marlou et vous ne pouvez pas vous passez de saucisson ? cette offre est faites pour vous ! grace a cette offre vous aurez le privilège de recevoir chaque semaine un assortiment de nos meilleurs saucisson "Le Bon Marlou" afin que l'apéro ne termine jamais !</li>
+            <li><h4><span class="prix">30€/mois</span></h4></li>
+            <li class="descriptionOffre">Vous êtes un vrai marlou et vous ne pouvez pas vous passez de saucisson ? cette offre est faites pour vous ! grace a cette offre vous aurez le privilège de recevoir chaque semaine un assortiment de nos meilleurs saucisson "Le Bon Marlou" afin que l'apéro ne termine jamais !</li>
           </div>
           <button class="com">Je commande !</button>
         </ul>
@@ -71,6 +69,36 @@
         <input id="email" name="email" type="email" placeholder="Entrez votre email"></input>
         <input id="submit" type="submit" value="Envoyer"></input>
       </form>
+      <div id="popup">
+        <form>
+          <div id="infoClient">
+            <label>Nom : <input></label>
+            <label>Prénom : <input></label>
+            <p>Adresse de facturation:</p>
+            <label>Rue : <input></label>
+            <label>Ville : <input></label>
+            <label>Code postale : <input></label>
+          </div>
+          <div id="infoLivraison">
+            <p>Adresse de livraison:</p>
+            <label>Nom : <input></label>
+            <label>Prénom : <input></label><br>
+            <label>Rue : <input></label>
+            <label>Ville : <input></label>
+            <label>Code postale : <input></label>
+          </div>
+          <div id="infoCB">
+            <p>Paiment</p>
+            <ul>
+              <li><label>Numéro de carte bancaire : <input></label></li>
+              <li>
+                <label>Date d'expiration : <input></label>
+                <label>CVC/CVV : <input></label></li>
+              <li><label>Nom sur la carte : <input></label></li>
+              </ul>
+          </div>
+        </form>
+      </div>
     </section>
   </body>
 </html>
