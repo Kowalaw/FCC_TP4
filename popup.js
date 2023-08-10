@@ -8,5 +8,20 @@ function popupOn(){
         })
     }
 }
+function popupDef(){
+    let formpop = document.getElementById('popForm')
+    formpop.addEventListener('submit',(event)=>{
+        event.preventDefault()
+    })
+}
+function popupOff(){
+    let closePop = document.getElementById('valider')
+    closePop.addEventListener('click',()=>{
+        popup.classList.add('popupNone')
+        console.log('clik')
+    })
+}
 
+popupDef()
+popupOff()
 popupOn()

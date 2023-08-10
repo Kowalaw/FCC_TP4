@@ -70,29 +70,29 @@
         <input id="submit" type="submit" value="Envoyer"></input>
       </form>
       <div id="popup" class="popupNone">
-        <h3>Commande</h3>
-        <form>
+        <form id="popForm">
+          <h3>Commande</h3>
           <div id="infoClient">
             <label>Nom <input></label>
             <label>Prénom <input></label>
             <h5>Adresse de facturation </h5>
-            <label>Rue <input class="rue"></label><br>
+            <label>Rue <input class="rue"></label><br><br>
             <label>Ville <input></label>
             <label>Code postale <input class="cp"></label>
           </div>
           <div id="infoLivraison">
             <h5>Adresse de livraison</h5>
             <label>Nom <input></label>
-            <label>Prénom <input></label><br>
-            <label>Rue <input class="rue"></label><br>
+            <label>Prénom <input></label><br><br>
+            <label>Rue <input class="rue"></label><br><br>
             <label>Ville <input></label>
             <label>Code postale <input class="cp"></label>
           </div>
           <div id="infoCB">
             <h5>Paiment</h5>
-            <label>Numéro de carte bancaire <input placeholder="1234 1234 1234"></label><br>
+            <label>Numéro de carte bancaire <input placeholder="1234 1234 1234"></label><br><br>
             <label>Date d'expiration <input class="dateCB" placeholder="XX/XX"></label>
-            <label>CVC/CVV <input class="code3chifreCB" placeholder="123"></label><br>
+            <label>CVC/CVV <input class="code3chifreCB" placeholder="123"></label><br><br>
             <label>Nom sur la carte <input></label><br>
           </div>
           <button id="valider">Valider</button>
