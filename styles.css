@@ -171,3 +171,7 @@ width: 26rem;
 ::placeholder{
   text-align: right;
 }
+#valider{
+  display: block;
+  margin: 1rem auto;
+}
