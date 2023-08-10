@@ -44,7 +44,7 @@
             <li><h4><span class="prix">15€</span></h4></li>
             <li class="descriptionOffre">Recevez un assortiment de saucisson directement chez vous afin de découvrir notre merveilleuse gammes de saucissons "Le Bon Marlou"</li>
           </div>
-          <button class="com">Je commande !</button>
+          <button id="button" class="com">Je commande !</button>
         </ul>
         <ul>
           <div class="abo">
@@ -52,7 +52,7 @@
             <li><h4><span class="prix">12€/mois</span></h4></li>
             <li class="descriptionOffre">Vous aimez le saucisson ? grace a cette offre, vous recevrez chaque mois un assortiment différent de saucisson "Le Bon Marlou", a déguster seul ou entre amis !</li>
           </div>
-          <button class="com">Je commande !</button>
+          <button id="button" class="com">Je commande !</button>
         </ul>
         <ul>
           <div class="abo">
@@ -60,7 +60,7 @@
             <li><h4><span class="prix">30€/mois</span></h4></li>
             <li class="descriptionOffre">Vous êtes un vrai marlou et vous ne pouvez pas vous passez de saucisson ? cette offre est faites pour vous ! grace a cette offre vous aurez le privilège de recevoir chaque semaine un assortiment de nos meilleurs saucisson "Le Bon Marlou" afin que l'apéro ne termine jamais !</li>
           </div>
-          <button class="com">Je commande !</button>
+          <button id="button" class="com">Je commande !</button>
         </ul>
       </div>
       <hr>
@@ -69,33 +69,31 @@
         <input id="email" name="email" type="email" placeholder="Entrez votre email"></input>
         <input id="submit" type="submit" value="Envoyer"></input>
       </form>
-      <div id="popup">
+      <div id="popup" class="popupNone">
+        <h3>Commande</h3>
         <form>
           <div id="infoClient">
-            <label>Nom : <input></label>
-            <label>Prénom : <input></label>
-            <p>Adresse de facturation:</p>
-            <label>Rue : <input></label>
-            <label>Ville : <input></label>
-            <label>Code postale : <input></label>
+            <label>Nom <input></label>
+            <label>Prénom <input></label>
+            <h5>Adresse de facturation </h5>
+            <label>Rue <input class="rue"></label><br>
+            <label>Ville <input></label>
+            <label>Code postale <input class="cp"></label>
           </div>
           <div id="infoLivraison">
-            <p>Adresse de livraison:</p>
-            <label>Nom : <input></label>
-            <label>Prénom : <input></label><br>
-            <label>Rue : <input></label>
-            <label>Ville : <input></label>
-            <label>Code postale : <input></label>
+            <h5>Adresse de livraison</h5>
+            <label>Nom <input></label>
+            <label>Prénom <input></label><br>
+            <label>Rue <input class="rue"></label><br>
+            <label>Ville <input></label>
+            <label>Code postale <input class="cp"></label>
           </div>
           <div id="infoCB">
-            <p>Paiment</p>
-            <ul>
-              <li><label>Numéro de carte bancaire : <input></label></li>
-              <li>
-                <label>Date d'expiration : <input></label>
-                <label>CVC/CVV : <input></label></li>
-              <li><label>Nom sur la carte : <input></label></li>
-              </ul>
+            <h5>Paiment</h5>
+            <label>Numéro de carte bancaire <input placeholder="1234 1234 1234"></label><br>
+            <label>Date d'expiration <input class="dateCB" placeholder="XX/XX"></label>
+            <label>CVC/CVV <input class="code3chifreCB" placeholder="123"></label><br>
+            <label>Nom sur la carte <input></label>
           </div>
         </form>
       </div>

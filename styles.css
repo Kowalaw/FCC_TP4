@@ -128,3 +128,46 @@ form{
   text-align: center;
   margin-bottom: 2rem;
 }
+#popup{
+  background-color: #ffaaaa;
+  border: 4px double red;
+  border-radius: 15px;
+  width: 60rem;
+  margin: auto;
+  font-size: 1.6rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 50;
+}
+.popupNone{
+  display: none;
+}
+#popup > h3{
+  text-align: center;
+}
+#infoClient, #infoLivraison, #infoCB{
+  display: inline-block;
+  text-align: left;
+  margin: 0px 10%;
+}
+h5{
+  font-size: 1.6rem;
+  text-align: center;
+}
+.rue{
+width: 26rem;
+}
+.cp{
+  width: 8rem;
+}
+.dateCB{
+  width: 8rem;
+}
+.code3chifreCB{
+  width: 5rem;
+}
+::placeholder{
+  text-align: right;
+}
