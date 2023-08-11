@@ -190,3 +190,17 @@ width: 26rem;
   display: block;
   margin: 1rem auto;
 }
+#closePopup{
+  display: block;
+  margin-left: auto;
+  border-radius: 8px;
+}
+#fondPopUp{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffaaaa;
+  opacity: 0.5;
+}
