@@ -21,6 +21,10 @@ ul{
 #header-img{
   height: 5rem;
 }
+#fondhautdepage{
+  background-image: url(https://thumbs.dreamstime.com/b/nappe-%C3%A0-carreaux-rouge-et-blanc-pour-pique-nique-stock-161010991.jpg);
+  background-position: center;
+}
 section{
   border: 1px solid red;
   width: auto;
@@ -44,16 +48,35 @@ li > a:hover{
 }
 h1{
   text-align: center;
-  font-size: 3.2rem;}
+  font-size: 3.6rem;
+  text-shadow: #fff 3px 3px;
+}
 h2{
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
+  text-shadow: #fff 3px 3px;
+}
+#hrefnav1{
+  position: relative;
+  bottom: 5rem;
+}
+#divEngagements{
+  background-image:url(https://www.rspcaassured.org.uk/media/tvznayxv/pigs-trotting.jpg) ;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  height: 98vh;
+  background-size: cover;
 }
 h4{
   background-color: #ffaaaa; 
 }
 hr{
   border-top: 4px double  red;
+}
+#enga{
+  color: #fff;
+  text-shadow: red 2px 2px 2px;
+  font-size: 2.8rem;
 }
 #enga-txt{
   text-align: center;
@@ -64,12 +87,20 @@ hr{
   padding-top: 1.6rem; 
   border-left : 4px double red;
   border-right : 4px double red;
+  background-color: #fff;
+}
+#li1{
+  border-top: 4px double red;
+}
+#li3{
+  border-bottom: 4px double red;
 }
 #video{
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
   flex-wrap: wrap;
+  background-color: #fff;
 }
 iframe{
   width: 400px;
@@ -91,6 +122,7 @@ iframe{
   flex-direction: column;
   position: relative;
   right: 2rem;
+  background-color: #fff;
 }
 @media (max-width:800px) {
   h3{
